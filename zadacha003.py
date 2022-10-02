@@ -1,13 +1,6 @@
-x_coord = float(input('Введите координату X: '))
-y_coord = float(input('Введите коордианту Y: '))
-if x_coord == 0 or y_coord == 0:
-    print('Точка находится на оси координат.')
-elif x_coord > 0 and y_coord > 0:
-    print('точка лежит в первой четверти.')
-elif x_coord < 0 and y_coord > 0:
-    print('точка лежит во второй четверти.')
-elif x_coord < 0 and y_coord < 0:
-    print('точка лежит в третьей четверти.')
-elif x_coord > 0 and y_coord < 0 :
-    print('точка лежит в четвертой четверти.')
-    
+nmbr = int(input('Ввеедите число N: '))
+list_of_succesion = []
+for i in range(1, nmbr+1):
+    list_of_succesion.append((1 + 1/i)**(i))
+print("Последовательность: ", list_of_succesion)
+print("Сумма элементов последовательности: ", sum(list_of_succesion))

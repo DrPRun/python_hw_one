@@ -1,5 +1,6 @@
-data_week = int(input('Введите день недели: '))
-if 0 < data_week< 6:
-    print('нет')
-else:
-    print('да')
+nmbr = input("Введите некоторое число: ")
+sum_of_digits = 0
+for i in range(0, len(nmbr)):
+    if nmbr[i] != ',':
+        sum_of_digits += int(nmbr[i])
+print(sum_of_digits)
